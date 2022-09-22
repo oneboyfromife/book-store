@@ -3,10 +3,13 @@ import React from "react";
 
 const ProductCard = ({ imgUrl, year, title }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity style={{
+        borderRadius: 5,
+        
+    }}>
       <Image source={{ uri: imgUrl }} 
         style={{
-            
+
         }}
       />
       <View>

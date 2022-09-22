@@ -1,4 +1,4 @@
-import { View, Text, FlatList, ActivityIndicator } from "react-native";
+import { View, Text, FlatList, ActivityIndicator, SafeAreaView } from "react-native";
 import React, { useEffect } from "react";
 import SearchBar from "../components/SearchBar";
 import ProductCard from "../components/ProductCard";
@@ -24,7 +24,7 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <View>
+    <SafeAreaView>
       <Text>Home Screen</Text>
       <SearchBar />
       {isLoading ? (
@@ -44,7 +44,7 @@ const HomeScreen = () => {
           )}
         />
       )}
-    </View>
+    </SafeAreaView>
   );
 };
 
