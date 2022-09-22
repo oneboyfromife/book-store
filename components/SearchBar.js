@@ -1,5 +1,5 @@
-import { View, Text } from "react-native";
-import React, { useState } from "react";
+import { View, Text, TextInput, StyleSheet } from "react-native";
+import React, { useLayoutEffect, useState } from "react";
 
 const SearchBar = (props) => {
   const [text, setText] = useState();
